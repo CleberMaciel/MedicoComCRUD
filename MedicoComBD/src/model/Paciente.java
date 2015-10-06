@@ -15,12 +15,6 @@ public class Paciente {
     private String nome;
     private String dataNascimento;
 
-    public Paciente(int codigo, int rg, String nome, String dataNascimento) {
-        this.codigo = codigo;
-        this.rg = rg;
-        this.nome = nome;
-        this.dataNascimento = dataNascimento;
-    }
 
     public int getCodigo() {
         return codigo;

@@ -5,24 +5,21 @@
  */
 package repositorio;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
-import persistencia.Conexao;
+import model.Paciente;
 
 /**
  *
  * @author 631420226
  */
 public class RepositorioPaciente {
-    //metodos de adicionar excluir paciente
-
-    public void cadastrarPaciente() throws SQLException{
-       Connection conexao = Conexao.getConexao(); 
-       Statement s = conexao.createStatement();
-       
-       
-        
-        
+    private static Paciente p = new Paciente();
+    
+    public static Paciente getPaciente(){
+        return p;
+    }
+    
+    public void cadastrarPaciente(Paciente p ){
+    Paciente p1 = RepositorioPaciente.getPaciente();
+    
     }
 }
