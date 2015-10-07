@@ -14,7 +14,7 @@ import java.sql.SQLException;
  * @author 631420226
  */
 public class Conexao {
-   private static String URL ="jdbc:postgresql://localhost:5432/medicoPaciente";
+   private static String URL ="jdbc:postgresql://localhost:5432/consultoriomedico";
    private static String USER ="postgres";
    private static String PASS ="senac2015";
    
@@ -24,7 +24,7 @@ public class Conexao {
            c = DriverManager.getConnection(URL, USER, PASS);
            System.out.println("Conectado");
        } catch (SQLException e) {
-           System.out.println("Erro ao conecatr");
+           System.out.println("Erro ao conectar");
        }
        return c;
    }
